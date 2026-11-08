@@ -1,6 +1,6 @@
 # Specs and Fix
 
-**Specs and Fix** é uma ferramenta de automação em PowerShell para facilitar a manutenção e o diagnóstico de computadores com Windows. Tudo está em **um único arquivo**: `start-specs-and-fix.bat`.
+**Specs and Fix** é uma ferramenta para manutenção e diagnóstico de computadores Windows usando PowerShell. Tudo está em **um único arquivo**: `specs-fix.bat`.
 
 O script coleta informações de hardware e oferece rotinas de limpeza de arquivos temporários e reparo de arquivos corrompidos do sistema.
 
@@ -10,7 +10,7 @@ O script coleta informações de hardware e oferece rotinas de limpeza de arquiv
 - Permissão de Administrador (o próprio arquivo solicita)
 
 ## Como utilizar
-1. Baixe o arquivo `start-specs-and-fix.bat`.
+1. Baixe o arquivo `specs-fix.bat`.
 2. Dê dois cliques nele (aceite o pedido de administrador).
 3. Escolha uma opção no menu:
    - `[1]` Limpeza de arquivos temporários
@@ -20,14 +20,12 @@ O script coleta informações de hardware e oferece rotinas de limpeza de arquiv
 
 ### Modo direto (sem menu)
 Também é possível executar pelo terminal:
-
 ```
 start-specs-and-fix.bat limpeza
 start-specs-and-fix.bat reparo
 start-specs-and-fix.bat tudo
 start-specs-and-fix.bat tudo /y
 ```
-
 O parâmetro `/y` pula as confirmações.
 
 ## Funcionalidades
@@ -70,5 +68,4 @@ O arquivo `SPECS_AND_FIX_[NOME_DO_PC].txt` é salvo na mesma pasta do `.bat` (ou
 - Use por sua conta e risco.
 
 ---
-
 *by Victor Hugo*
